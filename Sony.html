@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mikamera, Rental kamera</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">
+            <label class="logo">
+                Mikamera
+            </label>
+        </a>
+        
+        <ul>
+            <li><a class="navactive" href="index.html">Home</a></li>
+            <li><a class="navactive" href="about.html">About</a></li>
+            <li><a class="navactive" href="canon.html">Canon</a></li>
+            <li><a class="navactive" href="nikon.html">Nikon</a></li>
+            <li><a class="navactive" href="Sony.html">Sony</a></li>
+        </ul>
+    </nav>
+    <!-- Navigation Bar -->
+
+    <!-- Menu Display -->
+    <h1>KAMERA SONY</h1>
+    <p style="text-align: center;">Kami menyediakan beberapa macam kamera Sony, silahkan pilih kamera yang ingin dipesan</p>
+
+        <div class="baris">
+            <div class="kolom">
+                <div class="card">
+                        <img src="image/sony/sony_alpha_7.jpg" alt="Sony Alpha 7" width="100%">
+                        <p><strong>Sony Alpha 7</strong></p>
+                </div>
+            </div>
+            <div class="kolom">
+                <div class="card">
+                        <img src="image/sony/sony-alpha-dslr-a580_7rca.jpg" alt="Nikon Z6 II" width="100%">
+                        <p><strong>Sony A580</strong></p>
+                </div>
+            </div>
+            <div class="kolom">
+                <div class="card">
+                        <img src="image/sony/Sony_a7RV_lead.jpeg" alt="Sony A7R V" width="100%">
+                        <p><strong>Sony A7R V</strong></p>
+                </div>
+            </div>
+            <div class="kolom">
+                <div class="card">
+                        <img src="image/sony/Sony_a7CII_3qtr.jpeg" alt="Sony A7C II" width="100%">
+                        <p><strong>Sony A7C II</strong></p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Proses Beli -->
+        <br>
+        <div style="margin-left: 20px;">
+            <form id="sewa" action="save_data.php" method="post">
+                <label for="nama" >Nama Penyewa</label>
+                <input style="margin-left: 10px;" type="text" id="nama" name="nama" required>
+                <br>
+                <label for="kamera">Nama Kamera</label>
+                <input style="margin-left: 20px;" type="text" id="kamera" name="kamera" required>
+                <br>
+                <label for="lama">Lama hari sewa</label>
+                <input style="margin-left: 11px;" type="number" id="lama" name="lama" min="1" required>
+                <br>
+                <button style="padding: 20px 90px; margin-left: 30px; border-radius: 8px;" type="submit"  id="submit">Pesan</button>
+            </form>
+        </div>
+        <!-- Footer -->
+        <div class="footer">
+            <footer>
+                <p>&copy; 2024 Rental Kamera Mika. All Rights Reserved</p>
+            </footer>
+        </div>
+        <!-- Footer -->
+</body>
+</html>

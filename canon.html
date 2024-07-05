@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mikamera, Rental kamera</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">
+            <label class="logo">
+                Mikamera
+            </label>
+        </a>
+        
+        <ul>
+            <li><a class="navactive" href="index.html">Home</a></li>
+            <li><a class="navactive" href="about.html">About</a></li>
+            <li><a class="navactive" href="canon.php">Canon</a></li>
+            <li><a class="navactive" href="nikon.html">Nikon</a></li>
+            <li><a class="navactive" href="Sony.html">Sony</a></li>
+        </ul>
+    </nav>
+
+    <!-- Menu Display -->
+    <h1>KAMERA CANON</h1>
+
+    <p style="text-align: center;">Kami menyediakan beberapa macam kamera Canon, silahkan pilih kamera yang ingin dipesan</p>
+
+        <div class="baris">
+            <div class="kolom">
+                <div class="card">
+                        <img src="image/canon/canon_eos_1d_x_mark_ii.jpg" alt="Canon EOS 1D x Mark II" width="100%">
+                        <p><strong>Canon EOS 1D x Mark II</strong></p>
+                </div>
+            </div>
+            <div class="kolom">
+                <div class="card">
+                        <img src="image/canon/canon_eos_5d_mark_iv.jpg" alt="Canon EOS 5D x Mark IV" width="100%">
+                        <p><strong>Canon EOS 5D x Mark IV</strong></p>
+                </div>
+            </div>
+            <div class="kolom">
+                <div class="card">
+                        <img src="image/canon/Canon-EOS-Rebel-SL2-300x300.jpg" alt="Canon EOS Rebel SL2" width="100%">
+                        <p><strong>Canon EOS Rebel SL2</strong></p>
+                </div>
+            </div>
+            <div class="kolom">
+                <div class="card">
+                        <img src="image/canon/Canon-EOS-90D-300x300.jpg" alt="Canon EOS 90D" width="100%">
+                        <p><strong>Canon EOS 90D</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Proses Beli -->
+        <br>
+        <div style="margin-left: 20px;">
+            <form id="sewa" action="save_data.php" method="post">
+                <label for="nama" >Nama Penyewa</label>
+                <input style="margin-left: 10px;" type="text" id="nama" name="nama" required>
+                <br>
+                <label for="kamera">Nama Kamera</label>
+                <input style="margin-left: 20px;" type="text" id="kamera" name="kamera" required>
+                <br>
+                <label for="lama">Lama hari sewa</label>
+                <input style="margin-left: 11px;" type="number" id="lama" name="lama" min="1" required>
+                <br>
+                <button style="padding: 20px 90px; margin-left: 30px; border-radius: 8px;" type="submit"  id="submit">Pesan</button>
+            </form>
+        </div>
+    
+    <!-- Footer -->
+    <div type="">
+    <div class="footer">
+        <footer>
+            <p>&copy; 2024 Rental Kamera Mika. All Rights Reserved</p>
+        </footer>
+    </div>
+</div>
+</body>
+</html>
